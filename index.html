@@ -1,24 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BlogDeCafé</title>
+
+    <!--Prefetch esto lo que va hacer que cuando este en misitio web y entro a la pestaña de nosotros la carga de la pagina va ser mas rapida-->
+    <link rel="prefetch" href="nosotros.html" as="document">
+
+
+
+    <!--Preeload para mejorar el perfomance de la pagina lo primero que va abrir al entrar a la pagina y cargar mas rapido los elementos-->
+    <link rel="preload" href="css/normalize.css" as="style">
     <link rel="stylesheet" href="normalize.css">
-    <link href = "https: //fonts.googleapis.com/css2? family = Open + Sans & family = PT + Sans: wght @ 400; 700 & display = swap "rel =" stylesheet ">
+
+    <link rel="preload"
+        href="https: //fonts.googleapis.com/css2? family = Open + Sans & family = PT + Sans: wght @ 400; 700 & display = swap "
+        crossorigin="crossorigin" as="font">
+    <link
+        href="https: //fonts.googleapis.com/css2? family = Open + Sans & family = PT + Sans: wght @ 400; 700 & display = swap "
+        rel=" stylesheet ">
+
+    <link rel="preload" href="css/styles.css" as="style">
     <link rel="stylesheet" href="css/styles.css">
+
+
+
+
 </head>
+
 <body>
     <header class="header">
         <div class="contenedor">
             <div class="barra">
                 <a class="logo" href="index.html">
-                  <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo_bold">DeCafé<span></h1>  
+                    <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo_bold">DeCafé<span></h1>
                 </a>
                 <nav class="navegacion">
-                 <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
-                 <a href="cursos.html" class="navegacion__enlace">Cursos</a>
-                 <a href="contacto.html" class="navegacion__enlace">Contactos</a>   
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contactos</a>
                 </nav>
             </div>
         </div>
@@ -37,34 +59,48 @@
             <h3>Nuestro Blog</h3>
             <article class="entrada">
                 <div class="entrada-imagen">
-                    <img src="img/blog1.jpg" alt="imagen blog">
+
+                    <img loading="lazy" src="img/blog1.jpg" alt="imagen blog">
+
                 </div>
                 <div class="entrada__contenido">
                     <h4 class="no-margin">Tipos de Grano de Café</h4>
-                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse corrupti quas quia explicabo magni. Minima tempora est eaque numquam cupiditate et ipsum libero! Nesciunt repudiandae libero molestias ratione, hic vel.</p>   
-                     <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse corrupti quas quia explicabo
+                        magni. Minima tempora est eaque numquam cupiditate et ipsum libero! Nesciunt repudiandae libero
+                        molestias ratione, hic vel.</p>
+                    <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
                 </div>
 
             </article>
             <article class="entrada">
                 <div class="entrada-imagen">
-                    <img src="img/blog2.jpg" alt="imagen blog">
+                    <!--Para mejorar el performance y la carga de la pagina se vaya haciendo por parte es con loading="lazy"-->
+
+                    <img loading="lazy" src="img/blog2.jpg" alt="imagen blog">
+
                 </div>
                 <div class="entrada__contenido">
                     <h4 class="no-margin">3 Deliciosas recetas de Cafe</h4>
-                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse corrupti quas quia explicabo magni. Minima tempora est eaque numquam cupiditate et ipsum libero! Nesciunt repudiandae libero molestias ratione, hic vel.</p>   
-                     <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse corrupti quas quia explicabo
+                        magni. Minima tempora est eaque numquam cupiditate et ipsum libero! Nesciunt repudiandae libero
+                        molestias ratione, hic vel.</p>
+                    <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
                 </div>
 
             </article>
             <article class="entrada">
                 <div class="entrada-imagen">
-                    <img src="img/blog3.jpg" alt="imagen blog">
+                    <picture>
+
+                        <img loading="lazy" src="img/blog3.jpg" alt="imagen blog">
+
                 </div>
                 <div class="entrada__contenido">
                     <h4 class="no-margin">Beneficios del Café</h4>
-                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse corrupti quas quia explicabo magni. Minima tempora est eaque numquam cupiditate et ipsum libero! Nesciunt repudiandae libero molestias ratione, hic vel.</p>   
-                     <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse corrupti quas quia explicabo
+                        magni. Minima tempora est eaque numquam cupiditate et ipsum libero! Nesciunt repudiandae libero
+                        molestias ratione, hic vel.</p>
+                    <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
                 </div>
 
             </article>
@@ -103,15 +139,18 @@
         <div class="contenedor">
             <div class="barra">
                 <a class="logo" href="index.html">
-                  <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo_bold">DeCafé<span></h1>  
+                    <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo_bold">DeCafé<span></h1>
                 </a>
                 <nav class="navegacion">
-                 <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
-                 <a href="cursos.html" class="navegacion__enlace">Cursos</a>
-                 <a href="contacto.html" class="navegacion__enlace">Contactos</a>   
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contactos</a>
                 </nav>
             </div>
         </div>
     </footer>
+
+    <script src="js/modernize.js"></script>
 </body>
+
 </html>
